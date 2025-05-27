@@ -1,0 +1,22 @@
+---
+title: "Homework3Submission"
+author: "Rachel Alvarado"
+subtitle: "https://github.com/roalvarado02/ENVS-193DS_homework-03.git" 
+format: html
+---
+
+```{r}
+library(tidyverse)
+library(here)
+library(gt)
+library(janitor)
+library(readxl)
+```
+
+# Problem 1: Personal data
+
+## a. Data Summarizing 
+
+[I am summarizing my data by taking the mean number of steps taken for each sleep category: less than 6 hours, 6–7 hours, 7–8 hours, 8–9 hours, 9–10 hours, and 10 or more hours, and comparing my daily step counts across different sleep durations. I sleep less when I have to get up early and be out of the house, so I think I will walk more compared to the days I am able to sleep in.]
+
+
