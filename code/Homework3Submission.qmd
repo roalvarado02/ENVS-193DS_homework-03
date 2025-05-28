@@ -25,41 +25,52 @@ my_data <- read_csv("/home/jovyan/ES-193DS/ENVS-193DS_homework-03/data/193DS - P
 ## b. Vizualization
 
 ```{r}
-# ggplot theme
+# Set ggplot theme
 theme_set(theme_bw())
-#cleaning data columns
+
+# Clean and categorize data
 my_data <- my_data |> 
   clean_names() |> 
-  #making column full of sleep categories 
   mutate(sleep_category = cut(
     sleep_hours,
     breaks = c(-Inf, 7, 8, 9, 10, Inf),
     labels = c("Less than 7", "7–8", "8–9", "9–10", "10 or more"),
-    right = FALSE)) #parameters are left-inclusive 
-#base layer: ggplot
+    right = FALSE))
+
+# Create plot
 ggplot(my_data, 
        aes(x = sleep_category, 
            y = exercise_steps, 
            color = sleep_category)) +
-  #first layer: jitter
-  geom_jitter(shape = 21, width = 0.2, height = 0, alpha = 0.6) + 
-  geom_point(data = mean_steps, aes(x = sleep_category, y = mean_steps),
-             shape = 16, size = 1) + 
-  # Changing axis labels and title
+  
+  # Open circles (individual points)
+  geom_jitter(shape = 1, height = 0, width = 0.2, alpha = 0.6) +
+  
+  # Colored filled mean points
+  stat_summary(
+    geom = "point", 
+    fun = mean, 
+    size = 4, 
+    aes(color = sleep_category, fill = sleep_category), 
+    shape = 21) +
+
+  # Labels and title
   labs(x = "Sleep Duration Category",
        y = "Number of Steps",
        title = "Daily Steps vs Sleep Duration Category") +
-  theme(legend.position = "none") +  # Taking out legend
-  # Adding summary to calculate mean in each sleep category
-  stat_summary(geom = "point",
-               fun = mean,
-               size = 4) +
-  # Manually setting colors
-  scale_color_manual(values = c("Less than 7" = "red",
-                                "7–8" = "orange",
-                                "8–9" = "hotpink",
-                                "9–10" = "green",
-                                "10 or more" = "blue"))
+
+  # Remove legend (optional)
+  theme(legend.position = "none") +
+
+  # Manually set color palette
+  scale_color_manual(values = c(
+    "Less than 7" = "red",
+    "7–8" = "orange",
+    "8–9" = "hotpink",
+    "9–10" = "green",
+    "10 or more" = "blue"
+  )) 
+
 
 ```
 
@@ -72,4 +83,33 @@ ggplot(my_data,
 ## d. Table presentation
 
 
+```{r}
+# Summarize mean steps by sleep category
+summary_table <- my_data |> 
+  group_by(sleep_category) |> 
+  summarise(Average_Steps = round(mean(exercise_steps), 1)) |> 
+  arrange(factor(sleep_category, levels = c("Less than 7", "7–8", "8–9", "9–10", "10 or more")))
+
+# Create GT table
+summary_table |> 
+  gt() |> 
+  cols_label(
+    sleep_category = "Sleep Duration Category",
+    Average_Steps = "Average Steps"
+  ) |> 
+  tab_header(
+    title = "Average Daily Steps by Sleep Duration"
+  )
+
+```
+
+
 # Problem 2: Affective visualization 
+
+## a. Describe in words what an affective visualization could look like for your personal data
+
+## b. Create a sketch of your idea
+
+## c. Make a draft of your visualization
+
+## d. Write an artist statement
