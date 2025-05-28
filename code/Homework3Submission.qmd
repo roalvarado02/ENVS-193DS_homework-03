@@ -11,12 +11,65 @@ library(here)
 library(gt)
 library(janitor)
 library(readxl)
+
+my_data <- read_csv("/home/jovyan/ES-193DS/ENVS-193DS_homework-03/data/193DS - Personal data project - Sheet1 (1).csv") 
+
 ```
 
 # Problem 1: Personal data
 
 ## a. Data Summarizing 
 
-[I am summarizing my data by taking the mean number of steps taken for each sleep category: less than 6 hours, 6–7 hours, 7–8 hours, 8–9 hours, 9–10 hours, and 10 or more hours, and comparing my daily step counts across different sleep durations. I sleep less when I have to get up early and be out of the house, so I think I will walk more compared to the days I am able to sleep in.]
+[I am summarizing my data by taking the mean number of steps taken for each sleep category: less than 7 hours, 7–8 hours, 8–9 hours, 9–10 hours, and 10 or more hours, and comparing my daily step counts across different sleep durations. I sleep less when I have to get up early and be out of the house, so I think I will walk more compared to the days I am able to sleep in.]
+
+## b. Vizualization
+
+```{r}
+# ggplot theme
+theme_set(theme_bw())
+#cleaning data columns
+my_data <- my_data |> 
+  clean_names() |> 
+  #making column full of sleep categories 
+  mutate(sleep_category = cut(
+    sleep_hours,
+    breaks = c(-Inf, 7, 8, 9, 10, Inf),
+    labels = c("Less than 7", "7–8", "8–9", "9–10", "10 or more"),
+    right = FALSE)) #parameters are left-inclusive 
+#base layer: ggplot
+ggplot(my_data, 
+       aes(x = sleep_category, 
+           y = exercise_steps, 
+           color = sleep_category)) +
+  #first layer: jitter
+  geom_jitter(shape = 21, width = 0.2, height = 0, alpha = 0.6) + 
+  geom_point(data = mean_steps, aes(x = sleep_category, y = mean_steps),
+             shape = 16, size = 1) + 
+  # Changing axis labels and title
+  labs(x = "Sleep Duration Category",
+       y = "Number of Steps",
+       title = "Daily Steps vs Sleep Duration Category") +
+  theme(legend.position = "none") +  # Taking out legend
+  # Adding summary to calculate mean in each sleep category
+  stat_summary(geom = "point",
+               fun = mean,
+               size = 4) +
+  # Manually setting colors
+  scale_color_manual(values = c("Less than 7" = "red",
+                                "7–8" = "orange",
+                                "8–9" = "hotpink",
+                                "9–10" = "green",
+                                "10 or more" = "blue"))
+
+```
 
 
+## c. Caption
+
+[Figure 1 - Scatterplot showing the relationship between categorized sleep duration and number of daily steps taken. Each open circle represents a singular day's step count, colored by sleep duration category. The larger filled dots indicate the average steps for each group. A general trend suggests that with less than 9 hours of sleep, I tended to have higher average step counts, while sleeping 9 or more hours showed lower activity levels.]
+
+
+## d. Table presentation
+
+
+# Problem 2: Affective visualization 
