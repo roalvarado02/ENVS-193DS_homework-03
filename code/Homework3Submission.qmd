@@ -43,7 +43,7 @@ ggplot(my_data,
            y = exercise_steps, 
            color = sleep_category)) +
   
-  # Open circles (individual points)
+  # Add jitter layer
   geom_jitter(shape = 1, height = 0, width = 0.2, alpha = 0.6) +
   
   # Colored filled mean points
@@ -51,15 +51,14 @@ ggplot(my_data,
     geom = "point", 
     fun = mean, 
     size = 4, 
-    aes(color = sleep_category, fill = sleep_category), 
-    shape = 21) +
+    aes(color = sleep_category)) +
 
   # Labels and title
   labs(x = "Sleep Duration Category",
        y = "Number of Steps",
        title = "Daily Steps vs Sleep Duration Category") +
 
-  # Remove legend (optional)
+  # Remove legend 
   theme(legend.position = "none") +
 
   # Manually set color palette
@@ -108,8 +107,34 @@ summary_table |>
 
 ## a. Describe in words what an affective visualization could look like for your personal data
 
+
+
 ## b. Create a sketch of your idea
+
+
 
 ## c. Make a draft of your visualization
 
+
+
 ## d. Write an artist statement
+
+
+
+# Problem 3: A Statistical Critique 
+
+## a. Revisit and summarize
+
+
+
+## b. Visual clarity
+
+
+
+## c. Aesthetic clarity
+
+
+
+## d. Recommendations
+
+
