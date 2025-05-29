@@ -138,9 +138,14 @@ Sketch of idea
 
 The authors used the Kruskal-Wallis Test to investigate whether two dominant nurse plants (Artemisia sieberi and Stipa arabica) influence taxonomic, functional, and phylogenetic diversity during different stages of land abandonment in a degraded arid landscape.
 
+Figure 1 - Kruskal-Wallis Test Results
 ![Figure 1 - Kruskal-Wallis Test Results](Figure2.png)
-![Figure 2 - Kruskal-Wallis Test Results]()
-![Figure 3 - Kruskal-Wallis Test Results]()
+
+Figure 2 - Kruskal-Wallis Test Results
+![Figure 2 - Kruskal-Wallis Test Results](Figure3.webp)
+
+Figure 3 - Kruskal-Wallis Test Results
+![Figure 3 - Kruskal-Wallis Test Results](Figure3.webp)
 
 ## b. Visual clarity
 
