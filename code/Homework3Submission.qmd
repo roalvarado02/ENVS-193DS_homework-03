@@ -122,6 +122,7 @@ An affective visualization of my personal data of comparing hours of sleep to da
 ## b. Create a sketch of your idea
 
 ![Sketch of idea](Vizualization Draft.jpg)
+Sketch of idea 
 
 ## c. Make a draft of your visualization
 
@@ -137,7 +138,9 @@ An affective visualization of my personal data of comparing hours of sleep to da
 
 The authors used the Kruskal-Wallis Test to investigate whether two dominant nurse plants (Artemisia sieberi and Stipa arabica) influence taxonomic, functional, and phylogenetic diversity during different stages of land abandonment in a degraded arid landscape.
 
-![Figure 1 - Kruskal-Wallis Test Results](Figure2.jpeg)
+![Figure 1 - Kruskal-Wallis Test Results](Figure2.png)
+![Figure 2 - Kruskal-Wallis Test Results]()
+![Figure 3 - Kruskal-Wallis Test Results]()
 
 ## b. Visual clarity
 
