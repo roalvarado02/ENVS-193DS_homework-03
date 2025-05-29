@@ -3,10 +3,13 @@ title: "Homework3Submission"
 author: "Rachel Alvarado"
 subtitle: "https://github.com/roalvarado02/ENVS-193DS_homework-03.git" 
 format: html
+execute:
+  message: false
+  warning: false
 ---
 
 ```{r}
-library(tidyverse)
+library(tidyverse) 
 library(here)
 library(gt)
 library(janitor)
@@ -76,7 +79,9 @@ ggplot(my_data,
 
 ## c. Caption
 
-[Figure 1 - Scatterplot showing the relationship between categorized sleep duration and number of daily steps taken. Each open circle represents a singular day's step count, colored by sleep duration category. The larger filled dots indicate the average steps for each group. A general trend suggests that with less than 9 hours of sleep, I tended to have higher average step counts, while sleeping 9 or more hours showed lower activity levels.]
+[Figure 1 - Less than 9 hours of sleep have higher step counts compared to sleeping 9 or more hours.
+
+Scatterplot showing the relationship between categorized sleep duration and number of daily steps taken. Each open circle represents a singular day's step count, colored by sleep duration category (total n = 35). Sleeping less than 9 hours is colored red, sleeping 7-8 hours is colored orange, sleeping 8-9 hours is colored hot pink, sleeping 9-10 hours is colored green, and sleeping 10 or more hours is colored blue. The larger filled dots indicate the average steps for each group. Data was collected by self recording hours of sleep and tracking through phone step count.]
 
 
 ## d. Table presentation

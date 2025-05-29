@@ -105,61 +105,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'tidyverse' was built under R version 4.4.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'purrr' was built under R version 4.4.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'lubridate' was built under R version 4.4.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.1.4     ✔ readr     2.1.5
-✔ forcats   1.0.0     ✔ stringr   1.5.1
-✔ ggplot2   3.5.1     ✔ tibble    3.2.1
-✔ lubridate 1.9.4     ✔ tidyr     1.3.1
-✔ purrr     1.0.4     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter() masks stats::filter()
-✖ dplyr::lag()    masks stats::lag()
-ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>here() starts at /home/jovyan/ES-193DS/ENVS-193DS_homework-03</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'janitor' was built under R version 4.4.2</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'janitor'
-
-The following objects are masked from 'package:stats':
-
-    chisq.test, fisher.test</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'readxl' was built under R version 4.4.3</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"/home/jovyan/ES-193DS/ENVS-193DS_homework-03/data/193DS - Personal data project - Sheet1 (1).csv"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 35 Columns: 7
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (1): Date
-dbl (5): Sleep (Hours), Weather (F), Health (1-3), Sleep Quality (1-3), Numb...
-num (1): Exercise (Steps)
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"/home/jovyan/ES-193DS/ENVS-193DS_homework-03/data/193DS - Personal data project - Sheet1 (1).csv"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="problem-1-personal-data" class="level1">
 <h1>Problem 1: Personal data</h1>
@@ -170,50 +122,50 @@ num (1): Exercise (Steps)
 <section id="b.-vizualization" class="level2">
 <h2 class="anchored" data-anchor-id="b.-vizualization">b. Vizualization</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set ggplot theme</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_bw</span>())</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean and categorize data</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> my_data <span class="sc">|&gt;</span> </span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">sleep_category =</span> <span class="fu">cut</span>(</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>    sleep_hours,</span>
-<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="cn">Inf</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="cn">Inf</span>),</span>
-<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Less than 7"</span>, <span class="st">"7–8"</span>, <span class="st">"8–9"</span>, <span class="st">"9–10"</span>, <span class="st">"10 or more"</span>),</span>
-<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">right =</span> <span class="cn">FALSE</span>))</span>
-<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot</span></span>
-<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(my_data, </span>
-<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> sleep_category, </span>
-<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> exercise_steps, </span>
-<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> sleep_category)) <span class="sc">+</span></span>
-<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add jitter layer</span></span>
-<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">shape =</span> <span class="dv">1</span>, <span class="at">height =</span> <span class="dv">0</span>, <span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
-<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Colored filled mean points</span></span>
-<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(</span>
-<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">geom =</span> <span class="st">"point"</span>, </span>
-<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> mean, </span>
-<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">4</span>, </span>
-<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">color =</span> sleep_category)) <span class="sc">+</span></span>
-<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Labels and title</span></span>
-<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Sleep Duration Category"</span>,</span>
-<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of Steps"</span>,</span>
-<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Daily Steps vs Sleep Duration Category"</span>) <span class="sc">+</span></span>
-<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove legend </span></span>
-<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
-<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-37"><a href="#cb15-37" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Manually set color palette</span></span>
-<span id="cb15-38"><a href="#cb15-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(</span>
-<span id="cb15-39"><a href="#cb15-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Less than 7"</span> <span class="ot">=</span> <span class="st">"red"</span>,</span>
-<span id="cb15-40"><a href="#cb15-40" aria-hidden="true" tabindex="-1"></a>    <span class="st">"7–8"</span> <span class="ot">=</span> <span class="st">"orange"</span>,</span>
-<span id="cb15-41"><a href="#cb15-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">"8–9"</span> <span class="ot">=</span> <span class="st">"hotpink"</span>,</span>
-<span id="cb15-42"><a href="#cb15-42" aria-hidden="true" tabindex="-1"></a>    <span class="st">"9–10"</span> <span class="ot">=</span> <span class="st">"green"</span>,</span>
-<span id="cb15-43"><a href="#cb15-43" aria-hidden="true" tabindex="-1"></a>    <span class="st">"10 or more"</span> <span class="ot">=</span> <span class="st">"blue"</span></span>
-<span id="cb15-44"><a href="#cb15-44" aria-hidden="true" tabindex="-1"></a>  )) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set ggplot theme</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_set</span>(<span class="fu">theme_bw</span>())</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean and categorize data</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>my_data <span class="ot">&lt;-</span> my_data <span class="sc">|&gt;</span> </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">clean_names</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">sleep_category =</span> <span class="fu">cut</span>(</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    sleep_hours,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="cn">Inf</span>, <span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>, <span class="cn">Inf</span>),</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Less than 7"</span>, <span class="st">"7–8"</span>, <span class="st">"8–9"</span>, <span class="st">"9–10"</span>, <span class="st">"10 or more"</span>),</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">right =</span> <span class="cn">FALSE</span>))</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Create plot</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(my_data, </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> sleep_category, </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> exercise_steps, </span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> sleep_category)) <span class="sc">+</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add jitter layer</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">shape =</span> <span class="dv">1</span>, <span class="at">height =</span> <span class="dv">0</span>, <span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Colored filled mean points</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">geom =</span> <span class="st">"point"</span>, </span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">fun =</span> mean, </span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">size =</span> <span class="dv">4</span>, </span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">color =</span> sleep_category)) <span class="sc">+</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Labels and title</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Sleep Duration Category"</span>,</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of Steps"</span>,</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Daily Steps vs Sleep Duration Category"</span>) <span class="sc">+</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove legend </span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Manually set color palette</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Less than 7"</span> <span class="ot">=</span> <span class="st">"red"</span>,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    <span class="st">"7–8"</span> <span class="ot">=</span> <span class="st">"orange"</span>,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">"8–9"</span> <span class="ot">=</span> <span class="st">"hotpink"</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    <span class="st">"9–10"</span> <span class="ot">=</span> <span class="st">"green"</span>,</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    <span class="st">"10 or more"</span> <span class="ot">=</span> <span class="st">"blue"</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  )) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -230,40 +182,40 @@ num (1): Exercise (Steps)
 <section id="d.-table-presentation" class="level2">
 <h2 class="anchored" data-anchor-id="d.-table-presentation">d.&nbsp;Table presentation</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Summarize mean steps by sleep category</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>summary_table <span class="ot">&lt;-</span> my_data <span class="sc">|&gt;</span> </span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sleep_category) <span class="sc">|&gt;</span> </span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Average_Steps =</span> <span class="fu">round</span>(<span class="fu">mean</span>(exercise_steps), <span class="dv">1</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">factor</span>(sleep_category, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Less than 7"</span>, <span class="st">"7–8"</span>, <span class="st">"8–9"</span>, <span class="st">"9–10"</span>, <span class="st">"10 or more"</span>)))</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create GT table</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>summary_table <span class="sc">|&gt;</span> </span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
-<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">sleep_category =</span> <span class="st">"Sleep Duration Category"</span>,</span>
-<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">Average_Steps =</span> <span class="st">"Average Steps"</span></span>
-<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
-<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Average Daily Steps by Sleep Duration"</span></span>
-<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Summarize mean steps by sleep category</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>summary_table <span class="ot">&lt;-</span> my_data <span class="sc">|&gt;</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(sleep_category) <span class="sc">|&gt;</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">Average_Steps =</span> <span class="fu">round</span>(<span class="fu">mean</span>(exercise_steps), <span class="dv">1</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">factor</span>(sleep_category, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Less than 7"</span>, <span class="st">"7–8"</span>, <span class="st">"8–9"</span>, <span class="st">"9–10"</span>, <span class="st">"10 or more"</span>)))</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create GT table</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>summary_table <span class="sc">|&gt;</span> </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">sleep_category =</span> <span class="st">"Sleep Duration Category"</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">Average_Steps =</span> <span class="st">"Average Steps"</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Average Daily Steps by Sleep Duration"</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="pgkaymgrhs" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#pgkaymgrhs table {
+<div id="iiqivttupx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#iiqivttupx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#pgkaymgrhs thead, #pgkaymgrhs tbody, #pgkaymgrhs tfoot, #pgkaymgrhs tr, #pgkaymgrhs td, #pgkaymgrhs th {
+#iiqivttupx thead, #iiqivttupx tbody, #iiqivttupx tfoot, #iiqivttupx tr, #iiqivttupx td, #iiqivttupx th {
   border-style: none;
 }
 
-#pgkaymgrhs p {
+#iiqivttupx p {
   margin: 0;
   padding: 0;
 }
 
-#pgkaymgrhs .gt_table {
+#iiqivttupx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -289,12 +241,12 @@ num (1): Exercise (Steps)
   border-left-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_caption {
+#iiqivttupx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#pgkaymgrhs .gt_title {
+#iiqivttupx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -306,7 +258,7 @@ num (1): Exercise (Steps)
   border-bottom-width: 0;
 }
 
-#pgkaymgrhs .gt_subtitle {
+#iiqivttupx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -318,7 +270,7 @@ num (1): Exercise (Steps)
   border-top-width: 0;
 }
 
-#pgkaymgrhs .gt_heading {
+#iiqivttupx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -330,13 +282,13 @@ num (1): Exercise (Steps)
   border-right-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_bottom_border {
+#iiqivttupx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_col_headings {
+#iiqivttupx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -351,7 +303,7 @@ num (1): Exercise (Steps)
   border-right-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_col_heading {
+#iiqivttupx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -371,7 +323,7 @@ num (1): Exercise (Steps)
   overflow-x: hidden;
 }
 
-#pgkaymgrhs .gt_column_spanner_outer {
+#iiqivttupx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -383,15 +335,15 @@ num (1): Exercise (Steps)
   padding-right: 4px;
 }
 
-#pgkaymgrhs .gt_column_spanner_outer:first-child {
+#iiqivttupx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#pgkaymgrhs .gt_column_spanner_outer:last-child {
+#iiqivttupx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#pgkaymgrhs .gt_column_spanner {
+#iiqivttupx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -403,11 +355,11 @@ num (1): Exercise (Steps)
   width: 100%;
 }
 
-#pgkaymgrhs .gt_spanner_row {
+#iiqivttupx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#pgkaymgrhs .gt_group_heading {
+#iiqivttupx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -433,7 +385,7 @@ num (1): Exercise (Steps)
   text-align: left;
 }
 
-#pgkaymgrhs .gt_empty_group_heading {
+#iiqivttupx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -448,15 +400,15 @@ num (1): Exercise (Steps)
   vertical-align: middle;
 }
 
-#pgkaymgrhs .gt_from_md > :first-child {
+#iiqivttupx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#pgkaymgrhs .gt_from_md > :last-child {
+#iiqivttupx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#pgkaymgrhs .gt_row {
+#iiqivttupx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -475,7 +427,7 @@ num (1): Exercise (Steps)
   overflow-x: hidden;
 }
 
-#pgkaymgrhs .gt_stub {
+#iiqivttupx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -488,7 +440,7 @@ num (1): Exercise (Steps)
   padding-right: 5px;
 }
 
-#pgkaymgrhs .gt_stub_row_group {
+#iiqivttupx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -502,15 +454,15 @@ num (1): Exercise (Steps)
   vertical-align: top;
 }
 
-#pgkaymgrhs .gt_row_group_first td {
+#iiqivttupx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#pgkaymgrhs .gt_row_group_first th {
+#iiqivttupx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#pgkaymgrhs .gt_summary_row {
+#iiqivttupx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -520,16 +472,16 @@ num (1): Exercise (Steps)
   padding-right: 5px;
 }
 
-#pgkaymgrhs .gt_first_summary_row {
+#iiqivttupx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_first_summary_row.thick {
+#iiqivttupx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#pgkaymgrhs .gt_last_summary_row {
+#iiqivttupx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -539,7 +491,7 @@ num (1): Exercise (Steps)
   border-bottom-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_grand_summary_row {
+#iiqivttupx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -549,7 +501,7 @@ num (1): Exercise (Steps)
   padding-right: 5px;
 }
 
-#pgkaymgrhs .gt_first_grand_summary_row {
+#iiqivttupx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -559,7 +511,7 @@ num (1): Exercise (Steps)
   border-top-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_last_grand_summary_row_top {
+#iiqivttupx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -569,11 +521,11 @@ num (1): Exercise (Steps)
   border-bottom-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_striped {
+#iiqivttupx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#pgkaymgrhs .gt_table_body {
+#iiqivttupx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -582,7 +534,7 @@ num (1): Exercise (Steps)
   border-bottom-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_footnotes {
+#iiqivttupx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -596,7 +548,7 @@ num (1): Exercise (Steps)
   border-right-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_footnote {
+#iiqivttupx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -605,7 +557,7 @@ num (1): Exercise (Steps)
   padding-right: 5px;
 }
 
-#pgkaymgrhs .gt_sourcenotes {
+#iiqivttupx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -619,7 +571,7 @@ num (1): Exercise (Steps)
   border-right-color: #D3D3D3;
 }
 
-#pgkaymgrhs .gt_sourcenote {
+#iiqivttupx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -627,72 +579,72 @@ num (1): Exercise (Steps)
   padding-right: 5px;
 }
 
-#pgkaymgrhs .gt_left {
+#iiqivttupx .gt_left {
   text-align: left;
 }
 
-#pgkaymgrhs .gt_center {
+#iiqivttupx .gt_center {
   text-align: center;
 }
 
-#pgkaymgrhs .gt_right {
+#iiqivttupx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#pgkaymgrhs .gt_font_normal {
+#iiqivttupx .gt_font_normal {
   font-weight: normal;
 }
 
-#pgkaymgrhs .gt_font_bold {
+#iiqivttupx .gt_font_bold {
   font-weight: bold;
 }
 
-#pgkaymgrhs .gt_font_italic {
+#iiqivttupx .gt_font_italic {
   font-style: italic;
 }
 
-#pgkaymgrhs .gt_super {
+#iiqivttupx .gt_super {
   font-size: 65%;
 }
 
-#pgkaymgrhs .gt_footnote_marks {
+#iiqivttupx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#pgkaymgrhs .gt_asterisk {
+#iiqivttupx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#pgkaymgrhs .gt_indent_1 {
+#iiqivttupx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#pgkaymgrhs .gt_indent_2 {
+#iiqivttupx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#pgkaymgrhs .gt_indent_3 {
+#iiqivttupx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#pgkaymgrhs .gt_indent_4 {
+#iiqivttupx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#pgkaymgrhs .gt_indent_5 {
+#iiqivttupx .gt_indent_5 {
   text-indent: 25px;
 }
 
-#pgkaymgrhs .katex-display {
+#iiqivttupx .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#pgkaymgrhs div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#iiqivttupx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
