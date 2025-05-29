@@ -112,7 +112,7 @@ summary_table |>
 
 ## a. Describe in words what an affective visualization could look like for your personal data
 
-
+An affective visualization of my personal data of comparing hours of sleep to daily steps could take the form of a color-coded spiral. Each loop of the spiral represents a day and the color intensity of the sprial varies on sleep quantity (darker colors for more sleep and lighter ones for less sleep). The thickness of each spiral depends on the amount of steps taken that day (thicker lines mean more steps, thinner lines are less).
 
 ## b. Create a sketch of your idea
 
