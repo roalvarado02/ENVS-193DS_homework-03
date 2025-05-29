@@ -126,7 +126,8 @@ Sketch of idea
 
 ## c. Make a draft of your visualization
 
-
+Drafted visualization on 14 x 11 " sketch paper
+![Drafted visualization](Draft.png)
 
 ## d. Write an artist statement
 
