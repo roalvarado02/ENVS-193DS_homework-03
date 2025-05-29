@@ -1,7 +1,7 @@
 ---
 title: "Homework3Submission"
 author: "Rachel Alvarado"
-Date: 05/28/25
+Date: "05/28/25"
 subtitle: "https://github.com/roalvarado02/ENVS-193DS_homework-03.git" 
 format:
   html:
