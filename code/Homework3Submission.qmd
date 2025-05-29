@@ -150,7 +150,7 @@ Figure 3 - Kruskal-Wallis Test Results
 
 ## b. Visual clarity
 
-The authors visually represented their statistics in the figures in a clear and concise manner. The boxplots clearly labeled the different categories they were measuring (species richness, Shannon's diversity, functional diversity, and phylogenetic diversity). Error bars indicate the 5th and 95th percentiles. The blue boxes signified the presence of nurse species and the red boxes signified the absence of nurse species. The x-axis labels which groups where the control, recently abandoned, and old abandoned. The y-axis is the mean pairwise distance (MPD), though it is difficult to tell what exactly is being measured. 
+The authors visually represented their statistics in the figures in a clear and concise manner. The boxplots clearly labeled the different categories they were measuring (species richness, Shannon's diversity, functional diversity, and phylogenetic diversity). Error bars indicate the 5th and 95th percentiles. The blue boxes signified the presence of nurse species and the red boxes signified the absence of nurse species. The x-axis labels which groups where the control, recently abandoned, and old abandoned. The y-axis is the mean pairwise distance (MPD), though it is difficult to tell what exactly is being measured. The Kruskal-Wallis p-value is located at the top of each category. 
 
 ## c. Aesthetic clarity
 
@@ -158,4 +158,4 @@ The authors poorly handled their visual clutter. While the variables were measur
 
 ## d. Recommendations
 
-
+The most important improvement would be to make sure the axes and titles are clear enough for the viewer to read. I would also add a legend describing how the blue color represents nurse species presence and the red color represents nurse species absence to avoid confusion. Lastly, I would be more specific in what the y-axis represents. The y-axis measures the mean pairwise distance (MPD) and biodiversity within different patches, however they are labeled "RaoQ" and "SES.mpd" which leaves the reader unclear as to what is being measured. Something like "mean pairwise distance (MPD)" and "Biodiversity plot difference (RaoQ)" would be more clear. 
