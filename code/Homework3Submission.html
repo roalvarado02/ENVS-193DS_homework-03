@@ -105,7 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
@@ -177,7 +177,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="c.-caption" class="level2">
 <h2 class="anchored" data-anchor-id="c.-caption">c.&nbsp;Caption</h2>
-<p>[Figure 1 - Scatterplot showing the relationship between categorized sleep duration and number of daily steps taken. Each open circle represents a singular day’s step count, colored by sleep duration category. The larger filled dots indicate the average steps for each group. A general trend suggests that with less than 9 hours of sleep, I tended to have higher average step counts, while sleeping 9 or more hours showed lower activity levels.]</p>
+<p>[Figure 1 - Less than 9 hours of sleep have higher step counts compared to sleeping 9 or more hours.</p>
+<p>Scatterplot showing the relationship between categorized sleep duration and number of daily steps taken. Each open circle represents a singular day’s step count, colored by sleep duration category (total n = 35). Sleeping less than 9 hours is colored red, sleeping 7-8 hours is colored orange, sleeping 8-9 hours is colored hot pink, sleeping 9-10 hours is colored green, and sleeping 10 or more hours is colored blue. The larger filled dots indicate the average steps for each group. Data was collected by self recording hours of sleep and tracking through phone step count.]</p>
 </section>
 <section id="d.-table-presentation" class="level2">
 <h2 class="anchored" data-anchor-id="d.-table-presentation">d.&nbsp;Table presentation</h2>
@@ -199,23 +200,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Average Daily Steps by Sleep Duration"</span></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="iiqivttupx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#iiqivttupx table {
+<div id="htsywrnhmi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#htsywrnhmi table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#iiqivttupx thead, #iiqivttupx tbody, #iiqivttupx tfoot, #iiqivttupx tr, #iiqivttupx td, #iiqivttupx th {
+#htsywrnhmi thead, #htsywrnhmi tbody, #htsywrnhmi tfoot, #htsywrnhmi tr, #htsywrnhmi td, #htsywrnhmi th {
   border-style: none;
 }
 
-#iiqivttupx p {
+#htsywrnhmi p {
   margin: 0;
   padding: 0;
 }
 
-#iiqivttupx .gt_table {
+#htsywrnhmi .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -241,12 +242,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_caption {
+#htsywrnhmi .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#iiqivttupx .gt_title {
+#htsywrnhmi .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -258,7 +259,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#iiqivttupx .gt_subtitle {
+#htsywrnhmi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -270,7 +271,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#iiqivttupx .gt_heading {
+#htsywrnhmi .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -282,13 +283,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_bottom_border {
+#htsywrnhmi .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_col_headings {
+#htsywrnhmi .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -303,7 +304,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_col_heading {
+#htsywrnhmi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -323,7 +324,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#iiqivttupx .gt_column_spanner_outer {
+#htsywrnhmi .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -335,15 +336,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#iiqivttupx .gt_column_spanner_outer:first-child {
+#htsywrnhmi .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#iiqivttupx .gt_column_spanner_outer:last-child {
+#htsywrnhmi .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#iiqivttupx .gt_column_spanner {
+#htsywrnhmi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -355,11 +356,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#iiqivttupx .gt_spanner_row {
+#htsywrnhmi .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#iiqivttupx .gt_group_heading {
+#htsywrnhmi .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -385,7 +386,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#iiqivttupx .gt_empty_group_heading {
+#htsywrnhmi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -400,15 +401,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#iiqivttupx .gt_from_md > :first-child {
+#htsywrnhmi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#iiqivttupx .gt_from_md > :last-child {
+#htsywrnhmi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#iiqivttupx .gt_row {
+#htsywrnhmi .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -427,7 +428,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#iiqivttupx .gt_stub {
+#htsywrnhmi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -440,7 +441,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iiqivttupx .gt_stub_row_group {
+#htsywrnhmi .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -454,15 +455,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#iiqivttupx .gt_row_group_first td {
+#htsywrnhmi .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#iiqivttupx .gt_row_group_first th {
+#htsywrnhmi .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#iiqivttupx .gt_summary_row {
+#htsywrnhmi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -472,16 +473,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iiqivttupx .gt_first_summary_row {
+#htsywrnhmi .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_first_summary_row.thick {
+#htsywrnhmi .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#iiqivttupx .gt_last_summary_row {
+#htsywrnhmi .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -491,7 +492,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_grand_summary_row {
+#htsywrnhmi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -501,7 +502,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iiqivttupx .gt_first_grand_summary_row {
+#htsywrnhmi .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -511,7 +512,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_last_grand_summary_row_top {
+#htsywrnhmi .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -521,11 +522,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_striped {
+#htsywrnhmi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#iiqivttupx .gt_table_body {
+#htsywrnhmi .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -534,7 +535,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_footnotes {
+#htsywrnhmi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -548,7 +549,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_footnote {
+#htsywrnhmi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -557,7 +558,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iiqivttupx .gt_sourcenotes {
+#htsywrnhmi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -571,7 +572,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#iiqivttupx .gt_sourcenote {
+#htsywrnhmi .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -579,72 +580,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#iiqivttupx .gt_left {
+#htsywrnhmi .gt_left {
   text-align: left;
 }
 
-#iiqivttupx .gt_center {
+#htsywrnhmi .gt_center {
   text-align: center;
 }
 
-#iiqivttupx .gt_right {
+#htsywrnhmi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#iiqivttupx .gt_font_normal {
+#htsywrnhmi .gt_font_normal {
   font-weight: normal;
 }
 
-#iiqivttupx .gt_font_bold {
+#htsywrnhmi .gt_font_bold {
   font-weight: bold;
 }
 
-#iiqivttupx .gt_font_italic {
+#htsywrnhmi .gt_font_italic {
   font-style: italic;
 }
 
-#iiqivttupx .gt_super {
+#htsywrnhmi .gt_super {
   font-size: 65%;
 }
 
-#iiqivttupx .gt_footnote_marks {
+#htsywrnhmi .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#iiqivttupx .gt_asterisk {
+#htsywrnhmi .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#iiqivttupx .gt_indent_1 {
+#htsywrnhmi .gt_indent_1 {
   text-indent: 5px;
 }
 
-#iiqivttupx .gt_indent_2 {
+#htsywrnhmi .gt_indent_2 {
   text-indent: 10px;
 }
 
-#iiqivttupx .gt_indent_3 {
+#htsywrnhmi .gt_indent_3 {
   text-indent: 15px;
 }
 
-#iiqivttupx .gt_indent_4 {
+#htsywrnhmi .gt_indent_4 {
   text-indent: 20px;
 }
 
-#iiqivttupx .gt_indent_5 {
+#htsywrnhmi .gt_indent_5 {
   text-indent: 25px;
 }
 
-#iiqivttupx .katex-display {
+#htsywrnhmi .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#iiqivttupx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#htsywrnhmi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -692,9 +693,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Problem 2: Affective visualization</h1>
 <section id="a.-describe-in-words-what-an-affective-visualization-could-look-like-for-your-personal-data" class="level2">
 <h2 class="anchored" data-anchor-id="a.-describe-in-words-what-an-affective-visualization-could-look-like-for-your-personal-data">a. Describe in words what an affective visualization could look like for your personal data</h2>
+<p>An affective visualization of my personal data of comparing hours of sleep to daily steps could take the form of a color-coded spiral. Each loop of the spiral represents a day and the color intensity of the sprial varies on sleep quantity (darker colors for more sleep and lighter ones for less sleep). The thickness of each spiral depends on the amount of steps taken that day (thicker lines mean more steps, thinner lines are less).</p>
 </section>
 <section id="b.-create-a-sketch-of-your-idea" class="level2">
 <h2 class="anchored" data-anchor-id="b.-create-a-sketch-of-your-idea">b. Create a sketch of your idea</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ENVS-193DS_homework-03/Vizualization%20Draft.jpg" class="img-fluid figure-img"></p>
+<figcaption>Sketch of idea</figcaption>
+</figure>
+</div>
 </section>
 <section id="c.-make-a-draft-of-your-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="c.-make-a-draft-of-your-visualization">c.&nbsp;Make a draft of your visualization</h2>
