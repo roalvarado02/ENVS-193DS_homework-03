@@ -1,6 +1,7 @@
 ---
 title: "Homework3Submission"
 author: "Rachel Alvarado"
+Date: 05/28/25
 subtitle: "https://github.com/roalvarado02/ENVS-193DS_homework-03.git" 
 format: html
 execute:
@@ -14,6 +15,8 @@ library(here)
 library(gt)
 library(janitor)
 library(readxl)
+library (jpeg)
+
 
 my_data <- read_csv("/home/jovyan/ES-193DS/ENVS-193DS_homework-03/data/193DS - Personal data project - Sheet1 (1).csv") 
 
@@ -97,6 +100,7 @@ summary_table <- my_data |>
 # Create GT table
 summary_table |> 
   gt() |> 
+  # labeling columns and title
   cols_label(
     sleep_category = "Sleep Duration Category",
     Average_Steps = "Average Steps"
@@ -116,7 +120,7 @@ An affective visualization of my personal data of comparing hours of sleep to da
 
 ## b. Create a sketch of your idea
 
-![Sketch of idea](ENVS-193DS_homework-03/Vizualization Draft.jpg)
+![Sketch of idea](Vizualization Draft.jpg)
 
 ## c. Make a draft of your visualization
 
@@ -130,7 +134,9 @@ An affective visualization of my personal data of comparing hours of sleep to da
 
 ## a. Revisit and summarize
 
+The authors used the Kruskal-Wallis Test to investigate whether two dominant nurse plants (Artemisia sieberi and Stipa arabica) influence taxonomic, functional, and phylogenetic diversity during different stages of land abandonment in a degraded arid landscape.
 
+![Figure 1 - Kruskal-Wallis Test Results](Figure2.jpeg)
 
 ## b. Visual clarity
 
