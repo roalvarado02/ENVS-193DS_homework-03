@@ -5,19 +5,19 @@ Date: 05/28/25
 subtitle: "https://github.com/roalvarado02/ENVS-193DS_homework-03.git" 
 format: html
 execute:
-  message: false
-  warning: false
+  message: false # use this to make sure messages don't show up
+  warning: false # use this to make sure messages don't show up
 ---
 
 ```{r}
-library(tidyverse) 
-library(here)
-library(gt)
-library(janitor)
-library(readxl)
-library (jpeg)
+library(tidyverse)  #general use
+library(here) #file organization
+library(gt) #creating tables
+library(janitor) #cleaning data frames
+library(readxl) #reading xl files
+library (jpeg) #adding jpeg images
 
-
+#read in data
 my_data <- read_csv("/home/jovyan/ES-193DS/ENVS-193DS_homework-03/data/193DS - Personal data project - Sheet1 (1).csv") 
 
 ```
@@ -37,13 +37,14 @@ theme_set(theme_bw())
 # Clean and categorize data
 my_data <- my_data |> 
   clean_names() |> 
+  #making columns based on sleep category
   mutate(sleep_category = cut(
     sleep_hours,
     breaks = c(-Inf, 7, 8, 9, 10, Inf),
     labels = c("Less than 7", "7–8", "8–9", "9–10", "10 or more"),
-    right = FALSE))
+    right = FALSE)) #includes the lesser value
 
-# Create plot
+# Create plot and input x and y axis values from table
 ggplot(my_data, 
        aes(x = sleep_category, 
            y = exercise_steps, 
@@ -59,7 +60,7 @@ ggplot(my_data,
     size = 4, 
     aes(color = sleep_category)) +
 
-  # Labels and title
+  # Label x and y axis and title
   labs(x = "Sleep Duration Category",
        y = "Number of Steps",
        title = "Daily Steps vs Sleep Duration Category") +
