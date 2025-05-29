@@ -3,7 +3,9 @@ title: "Homework3Submission"
 author: "Rachel Alvarado"
 Date: 05/28/25
 subtitle: "https://github.com/roalvarado02/ENVS-193DS_homework-03.git" 
-format: html
+format:
+  html:
+    toc: true # use this to display a table of contents
 execute:
   message: false # use this to make sure messages don't show up
   warning: false # use this to make sure messages don't show up

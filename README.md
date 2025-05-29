@@ -29,7 +29,7 @@ File structure:
 ├── ENVS-193DS_homework-03.Rproj
 ├── README.md
 ├── code                                     # code folder
-│   ├── workshop-08_code_KEY.Rmd
+│   ├── Homework3Submission.Rmd
 │   ├── Homework3Submission.html            # rendered output is from .qmd key
 │   ├── Homework3Submission.qmd
 │   ├── Homework3Submission_files
@@ -39,4 +39,4 @@ File structure:
 
 ## Rendered output
 
-The rendered key is [here](https://an-bui.github.io/ENVS-193DS_workshop-08/code/workshop-08_code_KEY.html).  
+The rendered key is https://roalvarado02.github.io/ENVS-193DS_homework-03/code/Homework3Submission.html.  
