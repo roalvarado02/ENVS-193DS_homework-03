@@ -154,7 +154,7 @@ The authors visually represented their statistics in the figures in a clear and 
 
 ## c. Aesthetic clarity
 
-
+The authors poorly handled their visual clutter. While the variables were measured and sorted clearly, the words were very blurry on the x and y axis and the titles. It was hard to tell what the y-axis was measuring and what the different colors represented or where the error bars were located. 
 
 ## d. Recommendations
 
